@@ -1,1 +1,57 @@
-Deep learning for supre reslution of Tubulent kinetic energy
+<div align="center">
+  <h1>🌊 TKE-Net</h1>
+  <h3>Deep Learning for Estimation of Super-Resolved Turbulent Kinetic Energy Maps from 4D-Flow MRI Data</h3>
+  
+  [![IEEE Xplore](https://img.shields.io/badge/IEEE-Paper_Link-00629B?logo=ieee&style=for-the-badge)](https://ieeexplore.ieee.org/abstract/document/10230629)
+  [![ISBI 2023](https://img.shields.io/badge/Conference-ISBI_2023-4b0082?style=for-the-badge)]()
+  [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
+  [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)]()
+</div>
+
+---
+
+> **Note:** The source code for this project is currently maintained in a private repository for ongoing research purposes. This repository serves as a showcase of the published methodology and results. If you are interested in collaboration or have specific technical questions, please feel free to reach out!
+
+## 📖 Overview
+
+Arterial stenosis is one of the most prevalent diseases with significant morbidity and mortality, requiring accurate quantification of hemodynamic parameters for diagnosis and prognosis. Variations in velocity derivatives are strongly correlated with variations in pressure gradient, which is a critical marker of the hemodynamic significance of a stenosis. 
+
+While **4D flow MRI** provides time-resolved 3D velocity mapping, standard clinical scans lack the spatial resolution required for precise velocity fluctuation quantification. Image denoising and super-resolution techniques are absolutely essential to extract meaningful turbulent metrics.
+
+To address this, we propose **TKE-Net**, a novel Deep Learning architecture based on a ResNet Convolutional Neural Network designed to directly estimate **Turbulent Kinetic Energy (TKE)** from low-resolution 4D-Flow MRI data.
+
+<br>
+
+## 🔬 Methodology & Validation
+
+1. **CFD Training:** We trained and tested TKE-Net using high-resolution Computational Fluid Dynamics (CFD) simulations of a phantom model of arterial stenosis. 
+2. **In-Vitro Testing:** The proposed network was further tested and validated on *in-vitro* 4D flow MRI data within an identical geometry.
+3. **Results:** TKE-Net demonstrated excellent accuracy in estimating high-fidelity TKE maps, bypassing the need for computationally expensive physics simulations at inference time.
+
+<br>
+
+## 📄 Publication
+
+This work was presented and published at the **IEEE International Symposium on Biomedical Imaging (ISBI) 2023**.
+
+**Title:** TKE-Net: Deep Learning for Estimation of Super-Resolved Turbulent Kinetic Energy Maps from 4D-Flow MRI Data  
+**Link:** [IEEE Xplore Document 10230629](https://ieeexplore.ieee.org/abstract/document/10230629)  
+**DOI:** `10.1109/ISBI53787.2023.10230629`
+
+### Citation
+If you find this research helpful in your work, please consider citing our paper:
+
+```bibtex
+@INPROCEEDINGS{kazemi2023tkenet,
+  author={Kazemi, Amir and others},
+  booktitle={2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)}, 
+  title={TKE-Net: Deep Learning for Estimation of Super-Resolved Turbulent Kinetic Energy Maps from 4D-Flow MRI Data}, 
+  year={2023},
+  doi={10.1109/ISBI53787.2023.10230629}
+}
+```
+
+---
+<div align="center">
+  <i>Developed by Amir Kazemi</i>
+</div>
