@@ -1,0 +1,28 @@
+# TKE-Net default configuration
+
+data:
+  root:   "./data"
+  format: "npy"             # "npy" or "csv"
+  upscale_factor: 2
+
+augmentation:
+  enabled: true
+
+model:
+  n_res_lr:  8              # residual blocks before upsampling
+  n_res_hr:  4              # residual blocks after upsampling
+  n_filters: 64
+  upscale_factor: 2
+
+training:
+  epochs:      500
+  batch_size:  20
+  lr:          0.0001
+  val_split:   0.2
+  patience:    50
+  check_every: 5
+  seed:        42
+
+output:
+  checkpoint_dir: "./checkpoints"
+  results_dir:    "./results"
